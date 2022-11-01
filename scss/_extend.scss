@@ -1,0 +1,120 @@
+
+
+// Extend usado para la hoja Nosotros
+
+.mainnosotros{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+}
+
+.imgnosotros {
+    border-radius: 3px;
+background: #7af5ed;
+box-shadow:  -20px -20px 5px #68d0c9,
+             20px 20px 5px #95f3f3;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+// extend usado para botones compra tienda
+
+
+.contenedor-compra{
+    border-radius: 14px;
+    background:rgba(5, 7, 12, 0.75);
+    box-shadow:  -39px -39px 78px #9d9999,
+                 39px 39px 78px #fff9f9;
+              
+
+}
+.button-compra {
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(165, 148, 148);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+.button-compra:hover {
+    background-color: #6cd3aa;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+.comentarios-compra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    font-size: 20px;
+    color:rgb(214, 213, 212);
+}
+
+.texto-h3{
+    margin-top: 20px;
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+
+.texto-h4{
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+
+.texto-p{
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+}
+
+.contenedor-seccion{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.contenedor-img-bolsa{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 250px;
+}
+
+.contenedor-btn-compra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    font-size: 20px;
+}

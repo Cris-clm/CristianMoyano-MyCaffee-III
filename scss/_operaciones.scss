@@ -1,0 +1,19 @@
+// Resta de valores para utilizar en Menu de Naveg. 
+
+// condicional para darle altura a footer
+@mixin condicional-footer($numeroHeightFooter) {
+    height: ($numeroHeightFooter);
+
+    @if $numeroHeightFooter ==150px {
+        background-color: #706a6a;
+    }
+}
+
+// condicional para darle altura y color header
+@mixin condicional-header($numeroHeightHeader) {
+    height: ($numeroHeightHeader);
+
+    @if $numeroHeightHeader ==120px {
+        background-color: #706a6a;
+    }
+}

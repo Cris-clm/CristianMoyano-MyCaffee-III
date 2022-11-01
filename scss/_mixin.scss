@@ -1,0 +1,26 @@
+
+@import"variablesvalores";
+
+
+
+//utilizamos mixin para mediaquery 
+
+//$anchominimo:317px;
+//$anchomaxino:770px;
+
+@mixin mediaquery{
+    @media screen and (max-width:$anchominimo),(max-width:$anchomaxino){
+        @content;
+    }
+}
+//mixin para achicar menu antes de legar al responsive
+
+// $sizeLiminimofont:771px;
+// $sizeLimaximofont:885px;
+@mixin font-size{
+    @media screen and (max-width: $sizeLiminimofont),(max-width: $sizeLimaximofont){
+        @content;
+    }
+}
+
+

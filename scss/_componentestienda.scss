@@ -1,0 +1,134 @@
+@import"extend";
+
+
+/*----Comienzo Componentes tienda------*/
+.tienda {
+
+    background-color: transparent;
+
+}
+
+.main-tienda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+.tienda-contenedor-1 {
+    @extend .contenedor-seccion;
+    @extend .contenedor-compra;
+
+}
+
+.tienda-contenedor-2 {
+    @extend .contenedor-seccion;
+    @extend .contenedor-compra;
+
+}
+
+.tienda-contenedor-3 {
+    @extend .contenedor-seccion;
+    @extend .contenedor-compra;
+
+}
+
+.tienda-contenedor-4 {
+    @extend .contenedor-seccion;
+    @extend .contenedor-compra;
+
+}
+
+.img-bolsa-1-1 {
+    background-image: url(../img-tienda/bolsa_coffee_1.png);
+    @extend .contenedor-img-bolsa;
+}
+
+.comentario-1-1 {
+    @extend .comentarios-compra;  
+}
+
+.img-bolsa-1-2 {
+    background-image: url(../img-tienda/bolsa_coffee_1.png);
+    @extend .contenedor-img-bolsa;
+}
+
+.comentario-1-2 {
+    @extend .comentarios-compra;
+}
+
+.img-bolsa-1-3 {
+    background-image: url(../img-tienda/bolsa_coffee_1.png);
+    @extend .contenedor-img-bolsa;
+}
+
+.comentario-1-3 {
+    @extend .comentarios-compra;
+}
+
+.img-bolsa-1-4 {
+    background-image: url(../img-tienda/bolsa_coffee_1.png);
+    @extend .contenedor-img-bolsa;
+}
+
+.comentario-1-4 {
+    @extend .comentarios-compra;
+}
+
+.btn-compra-1-1 {
+    @extend.contenedor-btn-compra;
+}
+
+.btn-compra-1-2 {
+    @extend.contenedor-btn-compra;
+}
+
+.btn-compra-1-3 {
+    @extend.contenedor-btn-compra;
+}
+
+.btn-compra-1-4 {
+    @extend.contenedor-btn-compra;
+}
+
+.btn-compra-1 {
+    @extend .button-compra;
+}
+
+
+.btn-compra-2 {
+    @extend .button-compra;
+}
+
+.btn-compra-3 {
+
+    @extend .button-compra;
+}
+
+.btn-compra-4 {
+
+    @extend .button-compra;
+}
+
+
+.btn-compra-1:hover {
+    @extend .button-compra:hover;
+}
+
+.btn-compra-2:hover {
+    @extend .button-compra:hover;
+}
+
+.btn-compra-3:hover {
+    @extend .button-compra:hover;
+}
+
+.btn-compra-4:hover {
+    @extend .button-compra:hover;
+}
+
+/*----Fin Componentes tienda------*/

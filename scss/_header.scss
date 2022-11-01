@@ -1,0 +1,204 @@
+@import"mixin";
+@import"variablesvalores";
+@import"operaciones";
+
+$varnueva:25px;
+//valores de titulo
+
+
+// 1 header index
+
+/*-----------Comienzo Estilos encabezado-------------*/
+.header-encabezado {
+    width: 100vw;
+    height: 120px;
+    font-family: roboto, sans-serif;
+    margin-bottom: 50px;
+    display: inline-block;
+
+    @include mediaquery {
+        width: 100%;
+        height: 90px;
+    }
+}
+
+
+.container-encabezado {
+@include condicional-header(120px);
+    width: 100%;
+    height: 120px;
+    margin-left: 0px;
+    margin-right: 15px;
+   /* background-color: #746e6e;*/
+
+    @include mediaquery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.title {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 17px;
+    color: #b9a9a9;
+}
+
+.logo {
+    float: left;
+
+    @include mediaquery {
+        display: none;
+    }
+}
+
+.logo-img-sup {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 90px;
+    height: 90px;
+
+    @include mediaquery {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+    }
+}
+
+.title {
+    width: 180px;
+    height: 150px;
+    float: left;
+}
+
+// nesting en div title
+.title {
+    h1 {
+        text-align: left;
+        font-size: 30px;
+        margin-top: 20px;
+        -webkit-text-stroke: 2px rgb(34, 31, 31);
+
+        // operacion realizada para reducir el tamaño del menu de navegación
+        @include mediaquery {
+            font-size: 25px
+        }
+    }
+}
+
+
+    .nav_img {
+        display: none;
+
+        @include mediaquery {
+            display: flex;
+            width: 45px;
+            height: 45px;
+
+        }
+    }
+
+    .nav_input {
+        display: none;
+
+    }
+
+    .bar-menu {
+        list-style: none;
+        float: right;
+        margin-right: 20px;
+    }
+
+    .bar-menu {
+        @include mediaquery {
+            background-color: #746e6e;
+            position: fixed;
+            top: 89px;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: clip-path 1.5s;
+            -webkit-transition: clip-path 1.5s;
+            -moz-transition: clip-path 1.5s;
+            -ms-transition: clip-path 1.5s;
+            -o-transition: clip-path 1.5s;
+        }
+    }
+
+    .nav-list {
+        @include mediaquery {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    // nesting en la activacion del clip-path
+    .nav_input:checked+ {
+        .bar-menu {
+            transition: clip-path 1.5s;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            position: absolute;
+        }
+    }
+
+    .nav_item:hover {
+        color: #fff;
+    }
+
+    // nesting en div .bar-menu
+    .bar-menu ul {
+        li {
+            margin-top: 40px;
+            list-style: none;
+            float: left;
+            text-align: center;
+            margin-right: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    .bar-menu ul li {
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+
+    .img-responsive {
+        display: none;
+    }
+
+    .bar-menu {
+        ul li {
+            margin-top: 40px;
+            list-style: none;
+            float: left;
+            text-align: center;
+            margin-right: 15px;
+            font-size: $tamanoFuenteNav;
+            font-weight: bold;
+//operaciones con valores en sass en mixin
+            @include font-size {
+                font-size: 25px - 5;
+            }
+        }
+
+    }
+
+
+    body {
+        @include mediaquery {
+            min-height: 100vh;
+            position: relative;
+        }
+    }
+
+    /*-----------Fin Stilos encabezado-------------*/

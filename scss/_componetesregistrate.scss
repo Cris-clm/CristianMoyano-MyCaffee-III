@@ -1,0 +1,88 @@
+@import "mixin";
+@import"extend";
+
+
+
+// bootstrap 
+/*---------Comienzo componentes registrate------*/
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+
+    .Form {
+        background-color: #384a5c;
+        justify-content: center;
+        border-radius: 5px;
+        align-items: center;
+        margin-top: 50px;
+        width: 30%;
+        height: 400px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        box-shadow: 7px 13px 30px #000;
+
+        @include mediaquery {
+            width: 295px;
+            background-color: #656d75;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+main {
+    .text-form {
+        font-size: 30px;
+        font-family: 'roboto', sans-serif;
+        color: #fff;
+    }
+
+    // nesting en div mb-3
+    .mb-3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        .form-control {
+            justify-content: center;
+            margin-bottom: 10px;
+            width: 70%;
+            align-items: center;
+        }
+    }
+
+    .form-label {
+        color: #fff;
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: 'roboto', sans-serif;
+        font-weight: bold;
+    }
+
+    .boton-enviar {
+        font-family: 'roboto', sans-serif;
+        width: 100px;
+        height: 35px;
+        border: 1px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        box-shadow: 7px 13px 70px #000;
+    }
+
+    
+}
+
+
+
+/*---------- fin componentes registrate------*/

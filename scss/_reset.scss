@@ -1,0 +1,28 @@
+
+//resetea los valores de nativos del navegador
+
+/*----------Reseteo de valores-----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+/*----------stilo para posicionar el footer abajo -----------*/
+
+// se posiciona el footer abajo
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+/*----------Fin posicionar el footer abajo -----------*/

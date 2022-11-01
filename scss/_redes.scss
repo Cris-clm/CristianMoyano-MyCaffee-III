@@ -1,0 +1,103 @@
+
+@import "variablesColor";
+
+/* ---- comienzo colores redes----*/
+// colores redes
+.redes ul {
+    li {
+        display: inline-block;
+        margin: 0 5px;
+        height: 50px;
+        text-align: right;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    
+}
+.redes {
+    h3{
+        font-family: 'roboto', sans-serif;
+        margin-bottom: 5px;
+        text-align:center;
+    }
+}
+.redes {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.redes ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+}
+
+
+
+    .redes {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .redes ul li {
+        a {
+            display: block;
+            padding: 0 10px;
+            color: rgb(221, 213, 213);
+            line-height: 50px;
+            box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+            transition: .2;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+        }
+    }
+
+
+    .redes ul li {
+        .facebook:hover {
+            background-color: $colorfacebook;
+            transition: background-color 1s;
+            -webkit-transition: background-color 1s;
+            -moz-transition: background-color 1s;
+            -ms-transition: background-color 1s;
+            -o-transition: background-color 1s;
+        }
+        .instagram:hover {
+            background: $colorinstagram;
+            transition: background-color 1s;
+            -webkit-transition: background-color 1s;
+            -moz-transition: background-color 1s;
+            -ms-transition: background-color 1s;
+            -o-transition: background-color 1s;
+        }
+    }
+    .redes ul li {
+        .twitter:hover {
+            background: $colortwitter;
+            transition: background-color 1s;
+            -webkit-transition: background-color 1s;
+            -moz-transition: background-color 1s;
+            -ms-transition: background-color 1s;
+            -o-transition: background-color 1s;
+        }
+        .whatsapp:hover {
+            background: $colorwhatsapp;
+            transition: background-color 1s;
+            -webkit-transition: background-color 1s;
+            -moz-transition: background-color 1s;
+            -ms-transition: background-color 1s;
+            -o-transition: background-color 1s;
+        }
+    }
+
+
+/* ------fin colores redes-----*/

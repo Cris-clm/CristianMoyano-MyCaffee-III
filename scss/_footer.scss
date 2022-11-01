@@ -1,0 +1,160 @@
+@import"mixin";
+@import "variablesColor";
+@import"operaciones";
+
+
+
+/* ----- comienzo Footer----*/
+.foot {
+   @include condicional-footer(150px);
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @include mediaquery {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+}
+
+    .nombre {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 250px;
+        font-family: 'roboto', sans-serif;
+        margin-top: 20px;
+        margin-left: 5px;
+
+        @include mediaquery {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 200px;
+            font-family: 'roboto', sans-serif;
+            margin-top: 15px;
+            margin-left: 5px;
+            
+        }
+    }
+
+    .nombre-h3 {
+        font-family: 'roboto', sans-serif;
+        color: $coloh3general;
+        font-size: 20px;
+        margin-right: 0px;
+        margin-top: 10px;
+
+        @include mediaquery {
+            color: $coloh3general;
+            font-family: 'roboto', sans-serif;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            margin-right: 0px;
+            margin-top: 20px;
+        }
+    }
+
+
+    // nesting en div redes footer
+    .redes ul {
+        ul {
+            margin: 0 5px;
+            display: inline-block;
+        }
+
+        li {
+            height: 50px;
+            text-align: right;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+    }
+
+    .img-footer {
+        width: 40px;
+        height: 40px;
+        float: right;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 49px;
+
+        @include mediaquery {
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .engranaje {
+        margin: 5px 5px;
+        position: inherit;
+    }
+
+    // nesting en div mail 
+    .mail {
+        h4 {
+            color: $coloh4general;
+            font-family: 'roboto', sans-serif;
+            font-size: 20px;
+            text-align: center;
+            @include mediaquery {
+                margin-top: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+    
+    .nombre-h3 a {
+        font-family: 'roboto', sans-serif;
+        color: #fff;
+        text-decoration: none
+    }
+    .sobre-nosotros {
+        color: #fff;
+        font-family: 'roboto', sans-serif;
+        margin-top: 2px;
+        font-size: 15px;
+    }
+
+    .redes .busqueda{
+        color: #fff;
+        font-family: 'roboto', sans-serif;
+        font-family: 10px;
+    }
+
+   .Nosotros .separador{
+    margin: 1px;
+    opacity: none;
+    color: #fff;
+    position:initial;
+    }
+
+    .redes .separador{
+        margin: 1px;
+        opacity: none;
+        color: #fff;
+        position: inherit;
+    }
+
+
+
+/*------Fin de Footer*/
