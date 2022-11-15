@@ -23,4 +23,8 @@
     }
 }
 
-
+@mixin form-reservas{
+    @media screen and (max-width: $sizeLiminimofont),(max-width: $sizeLimaximofont){
+        @content;
+}
+}

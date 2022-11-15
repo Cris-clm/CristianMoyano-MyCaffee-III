@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!--keywords -->
-      <meta name="keywords" content=" alquisición de café, el club del cafè">
-       <!--description -->
-  <meta name="description" content="reservas para un home officee con café">
-  <link rel="icon" href="">
-  <link rel="stylesheet" href="../css/main.css">
+    <!--keywords -->
+    <meta name="keywords" content=" alquisición de café, el club del cafè">
+    <!--description -->
+    <meta name="description" content="reservas para un home officee con café">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="https://kit.fontawesome.com/286b61fca9.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/375dd028ca.js" crossorigin="anonymous"></script>
     <title>Reservas</title>
@@ -43,67 +43,145 @@
             </div>
     </header>
     <main class="main-mesas">
-        <h2 class="titulo-mesas">Elgie tu mesa de trabajo </h2>
-    <div class="grid-container-mesas">
-        <div class="item1"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item2"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item3"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item4"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item5"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item6"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item7"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item8"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item9"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item10"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item11"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-        <div class="item12"><div class="bnt-mesas"><button type="button" class="btn-reserva">Reservar</button></div></div>
-    </div>
-</main>
-
-<footer class= "foot">
-    <div class="direccion">
-        <div class="mail">
-            <h4>clm-404@gmail.com</h4>
+        <h2 class="titulo-mesas">Elgie tu mesa de trabajo  </h2>
+        <h3>Saboreando el mejor Café y desarrolla tus tareas </h3>
+        <div class="grid-container-mesas">
+            <div class="item1">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item2">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item3">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item4">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item5">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item6">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item7">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item8">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item9">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item10">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item11">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
+            <div class="item12">
+                <div class="bnt-mesas"><label for="btn-modal" class="btn-reserva"> Reservar</label></div>
+            </div>
         </div>
-        <div class="Nosotros">
+        <!--comienzo de formulario-->
+
+        <input type="checkbox" id="btn-modal">
+        <div class="container-modal">
+            <div class="content-modal">
+                <form action="form">
+                    <div class="div-h2">
+                        <h2>¡Bienvenido!</h2>
+                        <hr>
+                    </div>
+                    <div class="div-p">
+                        <p>Elije día y hora para Reservar<br>tu mesa de trabajo</p>
+                    </div>
+                    <div class="div-input">  
+                        <input type="datetime-local" value="2000-01-01" name="data" />
+                    </div>
+                    <hr>
+                    <div class="div-p">
+                        <p>¿Hasta que hora deseas estar?</p>
+                    </div>
+                    <div class="div-input">
+                        <input type="datetime-local" value="2000-01-01" name="data" />
+                    </div>
+                    <div class="div-p">
+                        <p>Coloca tus datos</p>
+                    </div>
+                    <div class="div-input">
+                        <input type="mail" value="" placeholder="juan@peralta.com" />
+
+                    </div>
+                    <div class="div-input">
+                        <input type="name" placeholder="usuario">
+                    </div>
+                </form>
+                <div class="mensaje-final">
+                    <div class="texto-final">
+                        <p>Saboreando el mejor café</p>
+                    </div>
+
+                    <div class="taza-form">
+                        <img class="img-form-reserva" src="../img-reservas/cafe2.png">
+                    </div>
+                </div>
+                <div class="btn-cerrar">
+                    <label for="btn-modal">Reservar Ahora</label>
+                </div>
+            </div>
+            <label for="btn-modal" class="cerrar-modal"></label>
+        </div>
+        <!--Fin de Formulario-->
+
+
+
+    </main>
+
+    <footer class="foot">
+        <div class="direccion">
+            <div class="mail">
+                <h4>clm-404@gmail.com</h4>
+            </div>
+            <div class="Nosotros">
+                <hr>
+                <hr>
+                <p class="sobre-nosotros">
+                    Escribinos para que tus desarrollos <br>
+                    y observa tu sito en dasarrollo.
+                </p>
+            </div>
+
+        </div>
+        <div class="redes">
+            <div>
+                <h3>Encuentra Tu Café Aquí</h3>
+            </div>
             <hr>
             <hr>
-            <p class="sobre-nosotros">
-                Escribinos para que tus desarrollos <br>
-                y observa tu sito en dasarrollo.
-            </p>
+            <ul>
+                <li><a href="https://es-la.facebook.com" class="facebook"><i
+                            class="fab fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="https://www.instagram.com" class="instagram"><i
+                            class="fab fa-instagram-square fa-2x"></i></a></li>
+                <li><a href="https://twitter.com" class="twitter"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                <li><a href="https://www.whatsapp.com" class="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                </li>
+            </ul>
         </div>
 
-    </div>
-    <div class="redes">
-        <div>
-            <h3>Encuentra Tu Café Aquí</h3>
+        <div class="nombre">
+            <div class="engranaje">
+                <i class="fas fa-cog fa-spin fa-2x"></i>
+            </div>
+            <div>
+                <h3 class="nombre-h3"><a href="https://www.the-artery.com/error">Diseños Web</h3></a>
+            </div>
+            <div>
+                <img src="../img-footer/website.png" alt="imagen de 404" srcset="" class="img-footer">
+            </div>
         </div>
-        <hr>
-        <hr>
-        <ul>
-            <li><a href="https://es-la.facebook.com" class="facebook"><i
-                        class="fab fa-facebook-square fa-2x"></i></a></li>
-            <li><a href="https://www.instagram.com" class="instagram"><i
-                        class="fab fa-instagram-square fa-2x"></i></a></li>
-            <li><a href="https://twitter.com" class="twitter"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-            <li><a href="https://www.whatsapp.com" class="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="nombre">
-        <div class="engranaje">
-            <i class="fas fa-cog fa-spin fa-2x"></i>
-        </div>
-        <div>
-            <h3 class="nombre-h3"><a href="https://www.the-artery.com/error">Diseños Web</h3></a>
-        </div>
-        <div>
-            <img src="../img-footer/website.png" alt="imagen de 404" srcset="" class="img-footer"> 
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
 </body>

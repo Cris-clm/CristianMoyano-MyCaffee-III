@@ -142,12 +142,21 @@ $varnueva:25px;
     // nesting en la activacion del clip-path
     .nav_input:checked+ {
         .bar-menu {
+            
             transition: clip-path 1.5s;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             position: absolute;
         }
     }
+.nav_input:checked{
+    .nav_img{
+        display:none;
 
+    }
+.nav_cerrar{
+    display: flex;
+}
+}
     .nav_item:hover {
         color: #fff;
     }
@@ -193,6 +202,25 @@ $varnueva:25px;
 
     }
 
+ 
+    .nav_item::after{
+        content: "";
+        display:block;
+        margin-top:10px;
+        width: 100%;
+        height:3px;
+        background-color: #acd9e4;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        transition:clip-path 1s;
+        -webkit-transition:clip-path 1s;
+        -moz-transition:clip-path 1s;
+        -ms-transition:clip-path 1s;
+        -o-transition:clip-path 1s;
+}
+
+    .nav_item:hover::after{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
 
     body {
         @include mediaquery {
